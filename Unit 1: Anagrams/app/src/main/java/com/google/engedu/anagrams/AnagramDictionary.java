@@ -67,7 +67,7 @@ class AnagramDictionary {
      */
     public boolean isGoodWord(String word, String base) {
         // Word should not be subset
-        if (wordSet.contains(word) && !base.contains(word))
+        if (wordSet.contains(word) && !word.contains(base))
             return true;
         else
             return false;
